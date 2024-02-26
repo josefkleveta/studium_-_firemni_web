@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>josef kleveta - firma</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Navbar -->
+  <nav class="navbar navigace navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <!-- Logo firmy vlevo nahoře v nav. baru -->
+      <a
+        class="navbar-brand fw-bold text-uppercase"
+        href="#"
+        style="font-family: Montserrat"
+        >Prosperitas</a
+      >
+      <!-- ./ Logo firmy vlevo nahoře v nav. baru -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#o_firme">O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sluzby">Služby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cenik">Ceník</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br /><br />
+  <!-- ./ Navbar -->
+  <!-- Header -->
+  <header>
+    <div
+      class="cover-container d-flex w-100 h-100 mx-auto flex-column align-items-center justify-content-center"
+    >
+      <div class="text-white bg-dark bg-opacity-75 p-4 text-center">
+        <h1 class="display-1">Prosperitas</h1>
+        <p class="p-3" style="font-size: 1.5rem;">K bohatší budoucnosti</p>
+        <!-- Tlačítko ke spuštění Modal -->
+        <button
+          type="button"
+          class="btn btn-light rounded-0"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+        >
+          Otevřít informace
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Upozornění</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Tento web používá k poskytování služeb, personalizaci reklam a
+            analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím
+            souhlasíte.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer justify-content-between">
+            <button
+              type="button"
+              class="btn btn-dark rounded-0"
+              data-bs-dismiss="modal" disabled
+            >
+              <i class="bi bi-text-paragraph"></i> Více informací
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark rounded-0"
+              data-bs-dismiss="modal"
+            >
+              Souhlasím
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./ Modal -->
+  </header>
+  <!-- ./ Header -->
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- O firmě -->
+    <div class="container" id="o_firme">
+              <h2 class="display-3 text-center p-5" id="predstaveni">
+        Něco málo o nás
+      </h2>
+      <div class="row m-5">
+        <div class="col-md-8 col-sm-12">
+          <!-- Galerie / carousel -->
+
+          <div class="container mx-auto">
+            <!-- Carousel -->
+            <div id="galerie" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indikátory/tečky -->
+
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#galerie"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#galerie"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#galerie"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+
+              <!-- Slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="carousel/img1.jpg"
+                    alt="Lidé v kruhu, dávající high five"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption bg-dark bg-opacity-75">
+                    <h3>Spolupráce</h3>
+                    <p>
+                      Týmová hra je u nás vždy na prvním místě. Tak můžeme
+                      dosáhnout těch nejlepších výsledků.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="carousel/img2.jpg"
+                    alt="Standartní ubytování"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption bg-dark bg-opacity-75">
+                    <h3>Preciznost</h3>
+                    <p>
+                      V každém ohledu si dáváme záležet na perfektním přístupu a
+                      pečlivosti při plnění našich závazků.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="carousel/img3.jpg"
+                    alt="Luxusní ubytování"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption bg-dark bg-opacity-75">
+                    <h3>Osobní přístup</h3>
+                    <p>
+                      Vždy se snažíme najít nejlepší způsob k dosažení
+                      oboustranné spokojenosti.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ovládání doleva a doprava/ikony -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#galerie"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#galerie"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <!-- ./ Galerie / carousel -->
+        </div>
+        <div class="col-md-4 col-sm-12 text-center pt-5">
+          <span>
+            Každý člověk má
+            <span
+              class="tt"
+              data-bs-toggle="tooltip"
+              title="Když je ten mozek schopný produkovat sny."
+              >nějaké sny </span
+            >, nějaké cíle, které ho posouvají v životě dál. Nutí ho být lepším,
+            pracovat na sobě a posouvat se ke svému vysněnému cíli kousek po
+            kousku. A je jedno, jestli je ten kousek milimetr nebo kilometr,
+            hlavně že se člověk někam posouvá, má nějakou motivaci. Jenže po
+            chvíli už přestává člověka
+            <span
+              class="tt"
+              data-bs-toggle="tooltip"
+              title="Možná prostě stačí začít něco dělat. I jakákoliv hloupost se záměrem je akčnější než nicnedělání."
+            >
+              bavit posouvat se
+            </span>
+            jen o milimetry a pokládá si ty obávané otázky. Co dělám špatně?
+            <br /><br />
+            Mám vůbec šanci na úspěch? Neměl bych to raději vzdát? Tyto otázky
+            jsou opravdu nebezpečné a mnohdy se jen kvůli nim člověk posune zase
+            zpátky na začátek. Jak to tedy udělat?
+            <span
+              class="tt"
+              data-bs-toggle="tooltip"
+              title="Otázka, která následuje, až když se člověk cítí šťastný. Vážně. Prostě ta otázka sama od sebe přijde: A co teď být třeba úspěšný?"
+              >Jak být úspěšný v životě?</span
+            >
+            Dosáhnout všeho, co si přejeme a pokud možno při té snaze ze sebe
+            nesedřít kůži?
+            <br /><br />
+            Odpovědi na tyto a další otázky se pokouší zformulovat:
+            <i class="tt"><strong>Jan Hebnar</strong></i> ve své knize
+            <i class="tt"><strong>Stručný manuál úspěšného lenocha</strong></i
+            >.
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- ./ O firmě -->
+    <!-- Poskytované služby -->
+    <div class="container">
+      <h2 class="display-3 text-center p-5" id="sluzby">
+        Poskytované služby
+      </h2>
+      <div class="row justify-content-evenly">
+        <div class="col-sm-12 col-md-5 col-lg-3 border border-4 m-2">
+          <h2 class="text-center mt-4 display-5 p-2">Kariérní růst</h2>
+          <img
+            src="present/1.jpg"
+            alt="Schodiště s červenou stěnou"
+            class="rounded-circle mx-auto d-block mt-2 p-3 img-fluid d-none d-sm-block"
+          />
+          <p class="p-4">
+            Pomůžeme Vám růst. Nezáleží, v jakém zaměstnání pracujete. To jak se
+            budete cítit v životě je něco jiného. Jde o spokojenost Vaší
+            vlastní. S tím kdo jste a jak smýšlíte o sobě a o ostatních.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 border m-2 border-4">
+          <h2 class="text-center mt-4 display-5 p-2">Životní cíle</h2>
+          <img
+            src="present/2.jpg"
+            alt="Pohled na silnici táhnoucí se dál"
+            class="rounded-circle mx-auto d-block mt-2 p-3 img-fluid d-none d-sm-block"
+          />
+          <p class="p-4">
+            Pomůžeme Vám růst i životě. Nezáleží, v jakém zaměstnání pracujete.
+            To jak se budete cítit je něco jiného. Jde o spokojenost Vaší
+            vlastní. S tím kdo jste a jak smýšlíte o sobě a o ostatních.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 border m-2 border-4">
+          <h2 class="text-center mt-4 display-5">Naplněný život</h2>
+          <img
+            src="present/3.jpg"
+            alt="Pěkná photoshopovaná fotka s turistkou na vrcholu hory během západu slunce"
+            class="rounded-circle mx-auto d-block mt-2 p-3 img-fluid d-none d-sm-block"
+          />
+          <p class="p-4">
+            Taková prázdná fráze, jejíž smysl pochopíte, až budete cítit tu
+            emocionální změnu. Nezáleží, v jakém zaměstnání pracujete. Jde o
+            spokojenost Vaší vlastní. S tím kdo jste a jak smýšlíte o sobě a o
+            ostatních.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ./ Poskytované služby -->
+
+    <!-- Ceník služeb -->
+    <div class="container mt-5">
+      <h2 class="display-3 text-center p-5" id="cenik">
+        Jak si ceníme našich rad
+      </h2>
+      <table class="table table-striped text-center">
+        <thead>
+          <th>Počet lekcí</th>
+          <th>Cena za kariérní růst</th>
+          <th>Cena za životní cíle</th>
+          <th>Cena za naplněný život</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 lekce</td>
+            <td>500 Kč</td>
+            <td>500 Kč</td>
+            <td>500 Kč</td>
+          </tr>
+          <tr>
+            <td>5 lekcí</td>
+            <td>2 000 Kč</td>
+            <td>2 000 Kč</td>
+            <td>2 000 Kč</td>
+          </tr>
+          <tr>
+            <td>10 lekcí</td>
+            <td>3 000 Kč</td>
+            <td>3 000 Kč</td>
+            <td>3 000 Kč</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+      <span class="cenik">Cena za kompletní balíček -  <strong>"Cítit se jako člověk"</strong> je u nás <strong>8 111 Kč</strong>. </span>
+    </div>
+    <!-- Ceník služeb -->
+<div class="container m-5">
+    <br>
+</div>
+    <!-- Footer -->
+  <footer class="text-white text-center text-lg-start mt-5" id="kontakt" style="background-color: #23242a;">
+    <div class="container p-4">
+      <div class="row mt-4">
+
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Kde nás najdete</h5>
+
+          <!-- Google map -->
+          <div
+            id="map-container-google-1"
+            class="z-depth-1-half map-container"
+           
+          >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20823.290747164883!2d16.92050057328484!3d49.2780771167659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712f004c45e87ff%3A0xbdcd9f810947cf1d!2sDrnovice%2C%20683%2004%20Drnovice!5e0!3m2!1scs!2scz!4v1708944095509!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- ./ Google Maps -->
+
+
+        </div>
+        <!--Grid column-->
+
+        <!--Kontaktní formulář-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Formulář</h5>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Vaše emailová adresa</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="vašejméno@ucet.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Vaše zpráva</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Napište nám, o jaké služby, či balíčky služeb máte zájem. Uveďte své telefonní číslo a my Vás kontaktujeme."></textarea>
+</div>
+<div class="text-end"><button class="btn btn-light rounded-0">Odeslat</button></div>
+        </div>
+        <!--Kontaktní formulář-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Kontakt</h5>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">ProstěJoV, Krásná ulice 12</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">kontakt@ucime.cz</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+776 352 147</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 773 554 875</span>
+            </li>
+            </ul>
+            <div style="font-size: 2.5rem;" class="text-center">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-github"></i>
+            </div>
+        
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+      </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3 mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-white" href="https://josefkleveta.website/">josef kleveta</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <!-- ./ Footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
